@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #bbb;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+.container {
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+.header{
+   padding: 10px;
+   margin: 5px 0px;
+   text-align: center;
+}
+.tribute {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color:white;
+    box-shadow: 4px 4px 10px black;
+    padding:15px;
+    margin: 0px auto;
+    border-radius: 10px;
+    align-items: center;
+}
+.tribute blockquote {
+    font-size: 22px; 
+    font-weight: bold;
+    text-align: center; 
+    font-style: italic; 
+    line-height: 1.6; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); 
+}
+.tribute img {
+    width: 80%; 
+    height: auto; 
+    max-width: 350px; 
+    border-radius: 10px;  
+    margin: 0 auto; 
+}
+.bio{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.bio h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.bio p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.bio hr {
+    margin-top: 15px;
+}
+hr {
+    border: none;
+    border-top: 2px solid #ccc; 
+}
+.image-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 15px; 
+    margin-top: 20px; 
+    flex-wrap: wrap; 
+}
+.image-container .image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.image-container .image:hover {
+    transform: scale(1.05); 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+}
+#tribute-link {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+#tribute-link:hover {
+    color:blueviolet;
+    text-shadow: 2px 2px 6px violet;
+}
+#developer-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+#developer-link:hover {
+    color: blueviolet;
+    text-shadow: 1px 1px 5px violet;
+}
+small {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
+@media (max-width: 600px) {
+.tribute {
+        grid-template-columns: 1fr; 
+    }
+.tribute img {
+        max-width: 100%; 
+}
+.image {
+        width: 100%; 
+        max-width: none;
+    }
+}
